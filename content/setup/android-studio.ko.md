@@ -6,24 +6,29 @@ Android Studio
 
 The Android distribution of openFrameworks is setup to work with either the Eclipse IDE or experimentally Android Studio IDE. The projects are currently using a custom toolchain based on Makefiles to compile and install applications.
 
+안드로이드용 오픈프레임웍스 배포판은 이클립스 IDE 또는 안드로이드 스튜디오에서 동작하도록 세팅되어 있습니다. 프로젝트들은 현재 Makefile들을 기반으로한  커스텀 툴체인을 사용여 컴파일되고, 어플리케이션을 서치합니다.
+
 Android studio support in openFrameworks is still experimental. The latest version of android studio still doesn't have full support for c++ development so even if it's deprecated we still recomend to use eclipse and the ADT plugin if you want to have code completeion in c++. See android-eclipse.md in the docs folder or the corresponding guide in the download page.
+
+오픈프레임웍스에서의 안드로이드 스튜디오 지원은 아직 실험적인 단계입니다. 안드로이드 스튜디오의 최신버전은 아직까지 C++ 개발을 환벽하게 지워나지 않기 때문에, 여러분이 C++의 코드자동완성을 사용하길 원하신다면 설령deprecated 되어버린 이클립스와 ADT플러그인을 사용하는 방법을  권장해드립니다. docs 폴더의 android-eclipsed.ko.md 혹은 다온로드페이지의 해당 문서를 확인해주세요
 
 Summary
 -------
 
 Setting up openFrameworks with Android Studio is fairly straightforward. The basic steps are:
+오픈프레임웍스를 안드로이드스튜디오와 함께 셋업하는것은 꽤 직관적입니다. 간단한 단계는 다음과 같습니다:
 
-- Install Android Studio and the Android SDK
-- Install the Android NDK (actually tested version is r10e)
-- Download openFrameworks from the download page or from git
-- Set the path to the NDK in local.properties (`ndk.dir`)
+- 안드로이드 스튜디오와 안드로이드 SDK를 설치합니다.
+- 안드로이드 NDK를 설치합니다(r10e 버전이 테스트되었습니다. - 다만 좀더 최신버저인 r12b은 문제가 없는것으로 보입니다. 역자주)
+- 깃 혹은 다운로드페이지에서 오픈프레임웍스를 다운받습니다.
+- local.properties('ndk.dir')항복에 NDK의 경로를 지정합니다.
 - In Android Studio, use **File ➞ Import Project** and select an openFrameworks example from the examples/android folder
-- Build and run
+- 빋드하고 실행합니다.
 
 Installation
 ------------
 
-<h3>Install Android Studio and the SDK</h3>
+<h3> 안드로이드 스튜디오 및 SDK 설치하기</h3>
 
 Download and install Android Studio from http://tools.android.com/download/studio/stable (you need Android Studio 1.0 or higher). It should come with (or automatically install) a recent SDK, though you can customize the SDK version later from within Android Studio using **Tools ➞ Android ➞ SDK Manager**.
 

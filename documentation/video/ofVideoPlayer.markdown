@@ -23,7 +23,7 @@ Example:
 
 ~~~~{.cpp}
 ofVideoPlayer myPlayer;
-myPlayer.loadMovie("movies/fingers.mov");
+myPlayer.load("movies/fingers.mov");
 ~~~~
 
 You need to call play() for your video to begin playing:
@@ -1786,7 +1786,7 @@ _inlined_description: _
 
 
 _description: _
-
+OSX: Choose from OF_PIXELS_RGB or OF_PIXELS_RGBA
 
 
 
